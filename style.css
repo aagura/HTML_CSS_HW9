@@ -12,12 +12,13 @@ body {
 .desktop_index {
   display: flex;
   width: 100%;
-  height: 3828px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .addtocart {
   display: none;
-  
 }
 .aim {
   grid-area: 1/1;
@@ -82,22 +83,41 @@ body {
   height: 26.792px;
   flex-shrink: 0;
 }
+.find_sign {
+  fill: #e8e8e8;
+}
 
+.Forma1:hover .find_sign {
+  fill: #f16d7f;
+}
 .Button_copy {
+  display: flex;
+  gap: 2vw;
   position: absolute;
   top: 26px;
   left: 75vw;
   width: 158.996px;
   height: 29px;
   margin: auto;
+  grid-template-columns: 2vw;
   align-self: flex-end;
+}
+.cart {
+height: 32px;
+width: 29px;
+  fill: #E8E8E8;
+  fill-opacity: 1.000000;
+  fill-rule: nonzero;
+}
+.cart:hover {
+  fill: #f16d7f;
 }
 .smallbatton {
   display: none;
 }
 .Background {
   display: flex;
-  max-width: 100%;
+  width: 100vw;
   height: 50vw;
   flex-shrink: 0;
   flex-direction: row;
@@ -140,7 +160,8 @@ body {
 .Special_offers {
   display: flex;
   width: 100vw;
-  height: 631px;
+  height: auto;
+  margin-top: 0.13vw;
   padding-left: 0.13vw;
   padding-right: 0.13vw;
   align-items: center;
@@ -149,12 +170,13 @@ body {
 .box {
   display: grid;
   width: 74%;
+  padding-top: 3vw;
   height: auto;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   grid-auto-flow: row;
   column-gap: 3vw;
-  row-gap: 3vw;
+  row-gap: 1.5vw;
 }
 .long {
   display: grid;
@@ -174,6 +196,9 @@ body {
   justify-content: center;
   flex-shrink: 0;
   background: rgba(33, 22, 22, 0.7);
+}
+.long1:hover{
+display: none;
 }
 .Categories {
   grid-area: 1/1;
@@ -224,6 +249,9 @@ body {
   background: rgba(33, 22, 22, 0.7);
   justify-self: flex-start;
 }
+.Rectangl21:hover{
+  display:none ;
+}
 .Fetured {
   display: flex;
   margin-top: 35px;
@@ -263,8 +291,6 @@ body {
   max-width: 1140px;
   height: auto;
   margin-top: 48px;
-  padding-left: 230;
-  padding-right: 230;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
   grid-auto-flow: row;
@@ -299,7 +325,7 @@ body {
   flex-shrink: 0;
   background: #f8f8f8;
 }
-.Pic:hover .addtocart{
+.Pic:hover .addtocart {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,9 +374,7 @@ body {
   font-weight: 400;
   word-wrap: break-word;
 }
-.adc_b {
-  display: none;
-}
+
 .Background2 {
   display: flex;
   align-items: center;
@@ -515,59 +539,54 @@ body {
   height: 78px;
   width: 100vw;
   background: rgb(34, 34, 36);
-  gap:45vw;
+  gap: 45vw;
 }
-.Rights{
+.Rights {
   padding-left: 10vw;
   color: rgb(251, 251, 251);
-font-family: Lato;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0%;
-text-align: left;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-.social{
+.social {
   display: flex;
   height: 32px;
   width: 160px;
   align-items: center;
-  justify-content:center ;
+  justify-content: center;
   gap: 7.29px;
 }
-.sm{
+.sm {
   display: flex;
   height: 32px;
   width: 32px;
   align-items: center;
-  justify-content:center ;
+  justify-content: center;
   background: rgb(255, 255, 255);
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .desktop_index {
-    
-    height: 4273px;
-   
-  }
   .Background2 {
     padding-top: 30px;
     padding-bottom: 30px;
-   flex-direction: column;
-   height: auto;
+    flex-direction: column;
+    height: auto;
   }
-  .Rectangle26{
+  .Rectangle26 {
     padding-top: 30px;
     padding-bottom: 80px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   height: auto;
+    height: auto;
   }
-  
-  .Fetured{
+
+  .Fetured {
     height: 2300px;
   }
-  
+
   .pictures {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
@@ -596,30 +615,30 @@ text-align: left;
   }
 }
 @media (min-width: 0px) and (max-width: 767px) {
-  .Background3{
+  .Background3 {
     justify-content: center;
-    gap:10px;
+    gap: 10px;
     flex-direction: column-reverse;
   }
-  .Rights{
+  .Rights {
     padding-left: 0;
   }
   .Background2 {
     padding-top: 30px;
     padding-bottom: 30px;
-   flex-direction: column;
-   height: auto;
+    flex-direction: column;
+    height: auto;
   }
-  .Rectangle26{
+  .Rectangle26 {
     padding-top: 30px;
     padding-bottom: 80px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   height: auto;
+    height: auto;
   }
- 
-  .Fetured{
+
+  .Fetured {
     height: 4200px;
   }
   .Button_copy {
@@ -659,7 +678,7 @@ text-align: left;
     width: 100%;
     height: auto;
     padding-top: 5vw;
-    padding-bottom: 5bw;
+    padding-bottom: 5vw;
     align-items: center;
     justify-content: center;
   }
@@ -717,12 +736,7 @@ text-align: left;
   .Categories {
     display: none;
   }
-  .desktop_index {
-    display: flex;
-    width: 100%;
-    height: 7100px;
-    flex-direction: column;
-  }
+
   .long {
     display: grid;
     width: 100%;
@@ -741,8 +755,4 @@ text-align: left;
     justify-self: flex-start;
     background: rgba(33, 22, 22, 0.7);
   }
-  
- 
- 
-  
 }
