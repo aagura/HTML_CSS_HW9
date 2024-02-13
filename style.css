@@ -61,24 +61,24 @@ body {
 .content_rec {
   display: flex;
   position: relative;
-  max-width: 100%;
+  width: 70vw;
   min-height: 75px;
   flex-shrink: 0;
   flex-direction: row;
-  align-items: start;
-  padding-left: 14.4375%;
-  padding-right: 15%;
+  align-items: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
   gap: 41px;
 }
 .Group_2 {
   position: relative;
-  margin: auto;
+ 
   width: 44px;
   height: 38px;
   flex-shrink: 0;
 }
 .Forma1 {
-  margin: auto;
+ 
   width: 26.002px;
   height: 26.792px;
   flex-shrink: 0;
@@ -92,15 +92,11 @@ body {
 }
 .Button_copy {
   display: flex;
-  gap: 2vw;
-  position: absolute;
-  top: 26px;
-  left: 75vw;
-  width: 158.996px;
+  align-items: end;
+  justify-content: end;
+  gap: 1vw;
+  width: 75vw;
   height: 29px;
-  margin: auto;
-  grid-template-columns: 2vw;
-  align-self: flex-end;
 }
 .cart {
 height: 32px;
@@ -109,9 +105,17 @@ width: 29px;
   fill-opacity: 1.000000;
   fill-rule: nonzero;
 }
-.cart:hover {
-  fill: #f16d7f;
-}
+
+.cart2 {
+  height: 32px;
+  width: 29px;
+    fill: #E8E8E8;
+    fill-opacity: 1.000000;
+    fill-rule: nonzero;
+  }
+.cart2:hover {
+    fill: #f16d7f;
+  }
 .smallbatton {
   display: none;
 }
@@ -128,6 +132,7 @@ width: 29px;
   width: 50vw;
   height: 50vw;
 }
+
 .Rectangle16Copy {
   width: 12px;
   height: 92px;
@@ -140,6 +145,55 @@ width: 29px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+}
+.menu{
+  z-index: 2;
+  position: absolute;
+  top: 75px;
+  right:0;
+  margin-left:auto;
+  display: none;
+  height: fit-content;
+  width: 220px;
+  background: white;
+  box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu:target {
+  display: block;
+}
+h1{
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 32px;
+}
+h2{
+  color: rgb(241, 109, 127);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 32px;
+}
+p{
+  color: rgb(111, 110, 110);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left; 
+  padding-left: 52px;
+}
+p:hover{
+color: #f16d7f;
 }
 .OF_LUXERIOS {
   color: #222;
@@ -318,6 +372,11 @@ display: none;
   background: none;
   border-style: solid;
 }
+.Browse1:hover{
+  color: white;
+  
+  background: #f26376;
+}
 .Pic {
   display: grid;
   width: 360px;
@@ -389,7 +448,7 @@ display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 360px;
+  width: 33.3333vw;
   height: 134px;
   gap: 16px;
 }
@@ -482,22 +541,26 @@ display: none;
 }
 .subs_form {
   display: flex;
-  width: 356px;
+  width: 50vw;
+  max-width:356px ;
   height: 49px;
 }
 .email {
   display: flex;
   align-items: center;
+  background: red;
   justify-content: center;
-  width: 256px;
+  width: 28vw;
+  max-width: 256px;
   height: 49px;
   border-radius: 30px 0 0 30px;
   background: rgb(225, 225, 225);
 }
 .emtext {
+  
   display: flex;
   align-items: center;
-  width: 170px;
+  width: fit-content;
   height: 36px;
   opacity: 0.67;
   color: rgb(34, 34, 36);
@@ -512,7 +575,8 @@ display: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 22vw;
+  max-width:100px ;
   height: 49px;
   border-radius: 0 30px 30px 0;
   background: rgb(241, 109, 127);
@@ -521,7 +585,7 @@ display: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 85px;
+  width: 18vw;
   height: 36px;
   color: rgb(255, 255, 255);
   font-family: Lato;
@@ -530,6 +594,16 @@ display: none;
   line-height: 17px;
   letter-spacing: 0%;
   text-align: center;
+}
+.subsbut:hover  .subsbtext{
+ 
+  color: #f16d7f;
+}
+.subsbut:hover  {
+  background: #e8e8e8;
+  border-style:solid ;
+  border-color: #f16d7f;
+  
 }
 
 .Background3 {
@@ -567,7 +641,13 @@ display: none;
   justify-content: center;
   background: rgb(255, 255, 255);
 }
+.sm:hover{
+  background: #f16d7f;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
+  .textmini{
+    width: 70vw;
+  }
   .Background2 {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -585,6 +665,8 @@ display: none;
 
   .Fetured {
     height: 2300px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .pictures {
@@ -594,6 +676,7 @@ display: none;
   .TheBrandOfLuxeriousFashion {
     font-size: 36px;
   }
+ 
   .OF_LUXERIOS {
     font-size: 26px;
   }
@@ -615,6 +698,12 @@ display: none;
   }
 }
 @media (min-width: 0px) and (max-width: 767px) {
+  .textmini{
+    width: 80vw;
+  }
+  .cart2{
+    display:none ;
+  }
   .Background3 {
     justify-content: center;
     gap: 10px;
@@ -640,10 +729,10 @@ display: none;
 
   .Fetured {
     height: 4200px;
+    padding-left: 0;
+    padding-right:0;
   }
-  .Button_copy {
-    display: none;
-  }
+  
   .smallbatton {
     display: flex;
     position: absolute;
